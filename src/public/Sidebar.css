@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital@0;1&family=Raleway:wght@300;400;700&family=Tektur&family=Ysabeau+SC:wght@900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.Sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 80px;
+  background-color: #223843;
+  padding: 6px 14px;
+  z-index: 20;
+  transition: all 0.5s ease;
+}
+
+.Sidebar.Open {
+  width: 250px;
+}
+
+.Sidebar .Logo-box #btn {
+  position: absolute;
+  right: 16px;
+  transition: all 0.4s ease;
+  font-size: 32px;
+  text-align: center;
+  cursor: pointer;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 12px;
+}
+
+.Sidebar.Open .Logo-box #btn {
+  text-align: right;
+}
+
+.Sidebar .Nav-list {
+  margin-top: 80px;
+  height: 100%;
+}
+
+.Sidebar li {
+  position: relative;
+  margin: 12px 0;
+  list-style: none;
+  border-radius: 12px;
+}
+
+.Sidebar i {
+  color: #fff;
+  height: 60px;
+  min-width: 50px;
+  font-size: 28px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.Sidebar.Open li {
+  border-radius: 12px;
+}
+
+.Sidebar li a {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+
+.Sidebar li .Search-a {
+    background-color: #223843;
+}
+
+.Sidebar li a .Link-tag {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+}
+
+.Sidebar.Open li a .Link-tag {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.Sidebar li i {
+  height: 50px;
+  line-height: 55px;
+  font-size: 18px;
+  border-radius: 12px;
+}
+
+/* .Sidebar li:hover {
+  transition: all 0.5s ease;
+  background-color: #d77a61;
+  color: #fff;
+} */
+
+.Sidebar li:hover {
+  transition: all 0.5s ease;
+  background-color: #d77a61;
+  color: #fff;
+}
+
+.Sidebar li .Search:hover {
+    transition: all 0.5s ease;
+  background-color: #d77a61;
+  color: #fff;
+}
+
+.Sidebar input {
+  font-size: 15px;
+  color: #fff;
+  font-weight: 400;
+  outline: none;
+  height: 50px;
+  width: 100%;
+  width: 45px;
+  border: none;
+  border-radius: 12px;
+  transition: all 0.4s ease;
+  background: #375b6d;
+}
+
+.Sidebar.Open input {
+  padding: 0 20px 0 50px;
+  width: 100%;
+}
+
+.Sidebar .Search {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 22px;
+  background: #375b6d;
+  color: #fff;
+  cursor: pointer;
+}
+
+.Sidebar.Open .Search:hover {
+  background-color: #375b6d;
+}
+
+.Tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #375b6d;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 30;
+  top: 10px;
+  left: 60px;
+  box-shadow: 0px 0px 24px -4px rgba(0, 0, 0, 0.4);
+  transition: 0s;
+}
+
+.Sidebar li:hover .Tooltiptext {
+  visibility: visible;
+}
+
+.Sidebar.Open li:hover .Tooltiptext {
+  visibility: hidden;
+}
