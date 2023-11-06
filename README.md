@@ -18,6 +18,7 @@ This project is a simple React application that implements a sidebar with variou
 ## Getting Started
 
 ### Installation
+To run this application locally, follow these steps:
 1. Clone the repository: git clone https://github.com/canturktezer/sidebar-react.git
 2. Navigate to the project folder: cd country-list-app
 3. Install the required dependencies: npm install
